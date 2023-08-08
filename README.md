@@ -12,6 +12,19 @@ yarn dev
 pnpm dev
 ```
 
+## First installation note
+
+```bash
+npx create-next-app@latest ./
+
+Would you like to use TypeScript? ... Yes
+Would you like to use ESLint? ... No
+Would you like to use Tailwind CSS? ... Yes
+Would you like to use `src/` directory? ... No
+Would you like to use App Router? (recommended) ... Yes
+Would you like to customize the default import alias? ... No
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
