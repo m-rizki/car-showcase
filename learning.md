@@ -32,3 +32,7 @@ sign in / up
 ## Create empty nextjs project
 
 ## First Setup Config file & Hero Section
+
+## Add reusability for button by create custom button component
+
+## Add hero image and setup public folder assets
