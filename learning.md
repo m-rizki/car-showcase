@@ -36,3 +36,7 @@ sign in / up
 ## Add reusability for button by create custom button component
 
 ## Add hero image and setup public folder assets
+
+## Add navigation section
+
+1. Add logo image
