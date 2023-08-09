@@ -43,3 +43,7 @@ sign in / up
 2. Add Sign In Button
 
 ## Add footer section
+
+## Add Car Catalogue Section
+
+1. implement search bar by using headless ui
