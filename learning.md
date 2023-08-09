@@ -40,3 +40,6 @@ sign in / up
 ## Add navigation section
 
 1. Add logo image
+2. Add Sign In Button
+
+## Add footer section
