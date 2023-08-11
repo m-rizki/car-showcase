@@ -46,4 +46,9 @@ sign in / up
 
 ## Add Car Catalogue Section
 
-1. implement search bar by using headless ui
+[x] implement search bar by using headless ui
+[x] Fetch all data from rapid API
+   **the console.log function in server components will be called in terminal (server side)**
+[x] CarCard
+
+## Add Car details modal
