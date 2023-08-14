@@ -1,45 +1,23 @@
+// model
+// model_angle_13
+// model_angle_33
+// model_angle_29
+
 export const manufacturers = [
-  'Acura',
-  'Alfa Romeo',
-  'Aston Martin',
-  'Audi',
-  'Bentley',
   'BMW',
-  'Buick',
-  'Cadillac',
-  'Chevrolet',
-  'Chrysler',
-  'Citroen',
-  'Dodge',
-  'Ferrari',
-  'Fiat',
-  'Ford',
-  'GMC',
+  'Fiat', 
   'Honda',
-  'Hyundai',
-  'Infiniti',
-  'Jaguar',
+  'Hyundai', 
+  'Jaguar', 
   'Jeep',
-  'Kia',
+  'Kia', 
   'Lamborghini',
-  'Land Rover',
   'Lexus',
-  'Lincoln',
-  'Maserati',
-  'Mazda',
-  'McLaren',
   'Mercedes-Benz',
-  'MINI',
+  'MINI', 
   'Mitsubishi',
-  'Nissan',
-  'Porsche',
-  'Ram',
-  'Rolls-Royce',
-  'Subaru',
-  'Tesla',
-  'Toyota',
-  'Volkswagen',
-  'Volvo',
+  'Nissan', 
+  'Toyota', 
 ]
 
 export const yearsOfProduction = [
@@ -58,7 +36,7 @@ export const yearsOfProduction = [
 export const fuels = [
   {
     title: 'Fuel',
-    value: '',
+    value: 'Fuel',
   },
   {
     title: 'Gas',

@@ -17,6 +17,12 @@
 9. Embracing the principles of writing clean code
 10. Fully responsive
 
+## Own Improvement
+
+[ ] Setup dummy Car Models image angle instead of using Imagin studio API
+[ ] Setup Search Bar to remove existing values (resetting query)
+[ ] Styling improvement
+
 ## Tech Stack
 
 1. Next 13
@@ -52,3 +58,20 @@ sign in / up
 [x] CarCard
 
 ## Add Car details modal
+
+## Setup car 2nd API -> Setup car model image angle
+
+link: [Imagin studio](https://www.imagin.studio/car-image-api)
+
+using freemium version : up to a max of 200,000 requests per month
+
+I'm not using this API here, I'll look for other alternatives later
+
+for now, I'll just setup the function
+
+About dummy cars imagin API
+
+model
+model_angle_13
+model_angle_33
+model_angle_29

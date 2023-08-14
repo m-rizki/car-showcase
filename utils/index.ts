@@ -34,5 +34,5 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
 // TODO: Setup car 2nd API
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-
+  // Key
 }
