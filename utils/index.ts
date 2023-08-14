@@ -1,10 +1,12 @@
-import { CarProps } from "@/types"
+import { CarProps } from '@/types'
 
 const carsAPIUrl = 'https://cars-by-api-ninjas.p.rapidapi.com/v1'
+const carsImaginUrl = 'https://cdn.imagin.studio/getimage'
 
 export const fetchCars = async () => {
   const headers = {
-    'X-RapidAPI-Key': 'b1eb227fbdmsh60203725b492d67p1a3efajsnb23710478579',
+    'X-RapidAPI-Key': 'b1eb227fbdmsh60203725b492d67p1a3efajsnb23710478579', // my key
+    // 'X-RapidAPI-Key': 'KJwZZIJSFimshuivMSVGaiYzkRomp15f2vKjsnK4bKzuUzVLzA',
     'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
   }
 
@@ -34,5 +36,18 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
 // TODO: Setup car 2nd API
 export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-  // Key
+  // hrjavascript-mastery
+  // source = https://gist.github.com/adrianhajdin/e41751d170881f32955f556aaa45c77c
+  const url = new URL(carsImaginUrl)
+
+  const { make, year, model } = car
+
+  url.searchParams.append('customer', 'hrjavascript-mastery' || '')
+  url.searchParams.append('make', make)
+  url.searchParams.append('modelFamily', model.split(' ')[0])
+  url.searchParams.append('zoomType', 'fullscreen')
+  url.searchParams.append('modelYear', `${year}`)
+  url.searchParams.append('angle', `${angle ? angle: ''}`)
+
+  return `${url}`
 }
