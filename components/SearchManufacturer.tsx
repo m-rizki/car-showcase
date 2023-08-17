@@ -46,12 +46,12 @@ const SearchManufacturer = (props: SearchManufacturerProps) => {
             leaveTo='opacity-0'
             afterLeave={() => setQuery('')}
           >
-            <Combobox.Options>
+            <Combobox.Options className={`custom-filter__options`}>
               {filteredManufacturers.map((item) => (
                 <Combobox.Option
                   key={item}
                   className={({ active }) =>
-                    `relative search-manufacturer__option ${
+                    `relative cursor-default select-none py-2 px-4 ${
                       active ? 'bg-primary-blue text-white' : 'text-gray-900'
                     }`
                   }
@@ -61,7 +61,7 @@ const SearchManufacturer = (props: SearchManufacturerProps) => {
                     <>
                       <span
                         className={`block truncate ${
-                          selected ? 'font-medium' : 'font-normal'
+                          selected ? 'font-bold' : 'font-normal'
                         }`}
                       >
                         {item}
