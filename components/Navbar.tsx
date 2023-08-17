@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { CustomButton } from '.'
@@ -20,6 +22,7 @@ const Navbar = () => {
           title='Sign In'
           btnType='button'
           containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
+          handleClick={() => alert('Under Development')}
         />
       </nav>
     </header>
