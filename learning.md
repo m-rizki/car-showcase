@@ -77,3 +77,7 @@ model_angle_33
 model_angle_29
 
 ## Setup Searching by model and manufacturer
+
+## Searching by fuel_type and year
+
+## Lazy loading implementation
