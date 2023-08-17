@@ -5,20 +5,20 @@
 
 export const manufacturers = [
   'BMW',
-  'Fiat', 
+  'Fiat',
   'Honda',
-  'Hyundai', 
-  'Jaguar', 
+  'Hyundai',
+  'Jaguar',
   'Jeep',
   // TODO: remove bg for cars image bellow
-  // 'Kia', 
+  // 'Kia',
   // 'Lamborghini',
   // 'Lexus',
   // 'Mercedes-Benz',
-  // 'MINI', 
+  // 'MINI',
   // 'Mitsubishi',
-  // 'Nissan', 
-  // 'Toyota', 
+  // 'Nissan',
+  // 'Toyota',
 ]
 
 export const yearsOfProduction = [
@@ -37,7 +37,7 @@ export const yearsOfProduction = [
 export const fuels = [
   {
     title: 'Fuel',
-    value: 'Fuel',
+    value: '',
   },
   {
     title: 'Gas',

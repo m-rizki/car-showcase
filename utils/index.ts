@@ -59,7 +59,6 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 
 export const generateCarImageUrl = (make?: string, angle?: string) => {
   if (!make) {
-    // TODO: handle car model by query search
     make = 'bmw'
   }
 
@@ -68,4 +67,14 @@ export const generateCarImageUrl = (make?: string, angle?: string) => {
   }
 
   return `cars/${make}/model_angle_${angle}.png`
+}
+
+export const updateSearchParams = (type: string, value: string) => {
+  const searchParams = new URLSearchParams(window.location.search)
+
+  searchParams.set(type, value)
+
+  const newPathName = `${window.location.pathname}?${searchParams.toString()}`
+
+  return newPathName
 }
