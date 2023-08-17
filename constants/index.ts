@@ -10,14 +10,15 @@ export const manufacturers = [
   'Hyundai', 
   'Jaguar', 
   'Jeep',
-  'Kia', 
-  'Lamborghini',
-  'Lexus',
-  'Mercedes-Benz',
-  'MINI', 
-  'Mitsubishi',
-  'Nissan', 
-  'Toyota', 
+  // TODO: remove bg for cars image bellow
+  // 'Kia', 
+  // 'Lamborghini',
+  // 'Lexus',
+  // 'Mercedes-Benz',
+  // 'MINI', 
+  // 'Mitsubishi',
+  // 'Nissan', 
+  // 'Toyota', 
 ]
 
 export const yearsOfProduction = [

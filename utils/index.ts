@@ -1,7 +1,7 @@
 import { CarProps } from '@/types'
 
 const carsAPIUrl = 'https://cars-by-api-ninjas.p.rapidapi.com/v1'
-const carsImaginUrl = 'https://cdn.imagin.studio/getimage'
+// const carsImaginUrl = 'https://cdn.imagin.studio/getimage'
 
 export const fetchCars = async () => {
   const headers = {
@@ -10,7 +10,7 @@ export const fetchCars = async () => {
     'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
   }
 
-  const response = await fetch(`${carsAPIUrl}/cars?model=carrera`, {
+  const response = await fetch(`${carsAPIUrl}/cars?model=bmw`, {
     headers: headers,
   })
 
@@ -34,20 +34,35 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
   return rentalRatePerDay.toFixed(0)
 }
 
-// TODO: Setup car 2nd API
-export const generateCarImageUrl = (car: CarProps, angle?: string) => {
-  // hrjavascript-mastery
-  // source = https://gist.github.com/adrianhajdin/e41751d170881f32955f556aaa45c77c
-  const url = new URL(carsImaginUrl)
+// Setup car 2nd API -> unused for now
+// export const generateCarImageUrl = (car: CarProps, angle?: string) => {
+//   // hrjavascript-mastery
+//   // source = https://gist.github.com/adrianhajdin/e41751d170881f32955f556aaa45c77c
+//   const url = new URL(carsImaginUrl)
 
-  const { make, year, model } = car
+//   const { make, year, model } = car
 
-  url.searchParams.append('customer', 'hrjavascript-mastery' || '')
-  url.searchParams.append('make', make)
-  url.searchParams.append('modelFamily', model.split(' ')[0])
-  url.searchParams.append('zoomType', 'fullscreen')
-  url.searchParams.append('modelYear', `${year}`)
-  url.searchParams.append('angle', `${angle ? angle: ''}`)
+//   url.searchParams.append('customer', 'hrjavascript-mastery' || '')
+//   url.searchParams.append('make', make)
+//   url.searchParams.append('modelFamily', model.split(' ')[0])
+//   url.searchParams.append('zoomType', 'fullscreen')
+//   url.searchParams.append('modelYear', `${year}`)
+//   url.searchParams.append('angle', `${angle ? angle: ''}`)
 
-  return `${url}`
+//   return `${url}`
+// }
+
+export const generateCarImageUrl = (carModel?: string, angle?: string) => {
+  let model = carModel
+
+  if (!carModel) {
+    // TODO: handle car model by query search
+    model = 'bmw'
+  }
+
+  if (!angle) {
+    return `cars/${model}/model.png`
+  }
+
+  return `cars/${model}/model_angle_${angle}.png`
 }
