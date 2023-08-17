@@ -24,7 +24,7 @@ const SearchButton = (props: SearchButtonProps) => {
 }
 
 const SearchBar = () => {
-  const [manufacturer, setManufacturer] = useState('')
+  const [manufacturer, setManufacturer] = useState('BMW')
   const [model, setModel] = useState('')
 
   const router = useRouter()
@@ -45,7 +45,7 @@ const SearchBar = () => {
     }
 
     const newPathName = `${window.location.pathname}?${searchParams.toString()}`
-    router.push(newPathName)
+    router.push(newPathName, { scroll: false })
   }
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {

@@ -38,7 +38,7 @@ const CarCard = ({ car }: CarCardProps) => {
       <div className='relative w-full h-40 my-3'>
         {/* not need width={50} height={50} if use fill */}
         <Image
-          src={`/${generateCarImageUrl('')}`}
+          src={`/${generateCarImageUrl(make)}`}
           alt='car model'
           fill
           priority

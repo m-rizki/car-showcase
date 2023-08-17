@@ -19,7 +19,7 @@
 
 ## Own Improvement
 
-[ ] Setup dummy Car Models image angle instead of using Imagin studio API
+[ x ] Setup dummy Car Models image angle instead of using Imagin studio API
 [ ] Setup Search Bar to remove existing values (resetting query)
 [ ] Styling improvement
 
@@ -76,4 +76,4 @@ model_angle_13
 model_angle_33
 model_angle_29
 
-<!-- For Now i am using jsm key -->
+## Setup Searching by model and manufacturer

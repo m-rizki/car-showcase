@@ -1,18 +1,23 @@
-import { CarProps } from '@/types'
+import { CarProps, FilterProps } from '@/types'
 
 const carsAPIUrl = 'https://cars-by-api-ninjas.p.rapidapi.com/v1'
 // const carsImaginUrl = 'https://cdn.imagin.studio/getimage'
 
-export const fetchCars = async () => {
+export const fetchCars = async (filters: FilterProps) => {
+  const { manufacturer, year, model, limit, fuel } = filters
+
   const headers = {
     'X-RapidAPI-Key': 'b1eb227fbdmsh60203725b492d67p1a3efajsnb23710478579', // my key
     // 'X-RapidAPI-Key': 'KJwZZIJSFimshuivMSVGaiYzkRomp15f2vKjsnK4bKzuUzVLzA',
     'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com',
   }
 
-  const response = await fetch(`${carsAPIUrl}/cars?model=bmw`, {
-    headers: headers,
-  })
+  const response = await fetch(
+    `${carsAPIUrl}/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
+    {
+      headers: headers,
+    }
+  )
 
   const result = await response.json()
 
@@ -52,17 +57,15 @@ export const calculateCarRent = (city_mpg: number, year: number) => {
 //   return `${url}`
 // }
 
-export const generateCarImageUrl = (carModel?: string, angle?: string) => {
-  let model = carModel
-
-  if (!carModel) {
+export const generateCarImageUrl = (make?: string, angle?: string) => {
+  if (!make) {
     // TODO: handle car model by query search
-    model = 'bmw'
+    make = 'bmw'
   }
 
   if (!angle) {
-    return `cars/${model}/model.png`
+    return `cars/${make}/model.png`
   }
 
-  return `cars/${model}/model_angle_${angle}.png`
+  return `cars/${make}/model_angle_${angle}.png`
 }
