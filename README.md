@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Hub (Typescript)
+
+This is an open source Car Showcase site Car Hub. This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+[![SharePrompt](./public/screenshot/car-hub.png)](https://car-showcase-m-rizki.vercel.app/)
+
+> **Warning**
+> This project is still in development and is not ready for production use.
+>
+> It uses new technologies (Next.Js 13 with app router, server component) which are subject to change and may break your application.
+
+## Tech Stack
+
+- [Typescript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- [headless ui](https://headlessui.com/)
+- [Rapid API](https://rapidapi.com/hub)
 
 ## Getting Started
 

@@ -17,11 +17,11 @@
 9. Embracing the principles of writing clean code
 10. Fully responsive
 
-## Own Improvement
+## Own Improvement / Changes
 
 [ x ] Setup dummy Car Models image angle instead of using Imagin studio API
-[ ] Setup Search Bar to remove existing values (resetting query)
-[ ] Styling improvement
+[ x ] Styling improvement
+[ x ] Fixing router behavior by preventing scroll on url change on searching, filter, and show more
 
 ## Tech Stack
 
